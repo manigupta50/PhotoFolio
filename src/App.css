@@ -1,0 +1,227 @@
+.App {
+  padding: 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.navBar {
+  width: 100%;
+  height: 70px;
+  background-color: rgb(151, 155, 231);
+  display: flex;
+}
+.logo {
+  column-gap: 10px;
+  display: flex;
+  align-items: center;
+  padding-left: 40px;
+}
+
+.logo img {
+  width: 50px;
+  height: 50px;
+}
+
+.albumBody {
+  width: 50%;
+}
+
+.createAlbumForm {
+  margin: 30px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: aquamarine;
+  border-radius: 10px;
+}
+
+.createAlbumForm form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 20px;
+  padding: 20px;
+  width: 90%;
+}
+
+.createAlbumForm form button {
+  border-radius: 10px;
+  padding: 10px;
+  border: none;
+  color: white;
+  font-size: large;
+  cursor: pointer;
+}
+
+.createAlbumForm form input {
+  width: 90%;
+  border-radius: 10px;
+  padding: 10px;
+  border: none;
+  height: 25px;
+}
+
+.clearButton {
+  background-color: red;
+}
+
+.createButton {
+  background-color: rgb(0, 166, 232);
+}
+
+.allAlbumContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.allAlbumsHeading {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin: 10px 0;
+}
+
+.allAlbumsHeading button {
+  border-radius: 10px;
+  padding: 10px;
+  border: 3px solid #07f;
+  color: #07f;
+  background-color: rgba(0, 119, 255, 0.1);
+  font-size: large;
+  cursor: pointer;
+}
+
+.allAlbums {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  column-gap: 15px;
+  row-gap: 15px;
+}
+
+.album {
+  height: 180px;
+  width: 180px;
+  border: 5px solid rgb(192, 189, 189);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  text-align: center;
+  position: relative;
+}
+
+.album img {
+  width: 100px;
+  height: 100px;
+}
+
+.album h3 {
+  width: 100%;
+  height: 100%;
+}
+
+.album:hover .overlay-buttons {
+  display: flex;
+}
+
+.overlay-buttons {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+
+.overlay-buttons button {
+  margin: 5px;
+  padding: 5px 10px;
+  background-color: #07f;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.album:hover {
+  border: 5px solid #07f;
+  cursor: pointer;
+}
+
+.albumImages {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 50%;
+}
+
+.albumImages button {
+  border-radius: 10px;
+  padding: 10px;
+  border: none;
+  color: white;
+  font-size: large;
+  cursor: pointer;
+  height: 40px;
+}
+
+/* image carousal */
+.imageModal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal img {
+  width: 60%;
+  height: 60%;
+  object-fit: cover;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.modal .closeButton {
+  background-color: red;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.carousel-nav {
+  position: absolute;
+  top: 50%;
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+}
+
+.carousel-nav button {
+  background-color: #07f;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
